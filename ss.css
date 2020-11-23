@@ -1,0 +1,267 @@
+h1{
+  color:blue;
+}
+body{
+  background-color: whitesmoke;
+  color:chartreuse;
+  font-family:Arial, Helvetica, sans-serif;
+ /* font-weight:bold;*/
+ /*font-weight:800;*/
+ font-weight:normal;
+ font-size:12px;
+ /*font:normal 12px Arial, Helvetica, sans-serif;*/
+ line-height:1.5em;
+ margin:0;
+}
+.sisalto1{
+  background-color:burlywood;
+      padding:10px;
+  border-style:dotted;
+  border-right-color:black;
+  border-left-style:double;
+  border-top-style:solid;
+  border-left-color:blueviolet;
+}
+.sisalto1 h1{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration:underline;
+  text-transform:uppercase;
+  letter-spacing:0.5em;
+  word-spacing:1em;
+
+}
+.alue1{
+  width:70%;
+  /*
+  margin-top:25px;
+  margin-bottom:25px;
+  margin-left:15px;
+  margin-right:15px;
+  */
+ /* margin:25px 15px;*/
+    margin:auto;
+}
+.linkkilista{
+  margin-top: 10px;
+  border:1px blanchedalmond solid;
+  padding:20px;
+  border-radius:2000px;
+}
+.linkkilista{
+  text-align:center;
+  color:peachpuff;
+}
+.linkkilista ul{
+  list-style-type:none;
+}
+a{
+  text-decoration:none;
+  color:black;
+}
+a:hover{
+  color:greenyellow;
+}
+a:active{
+  color:hsla(hue, saturation, lightness, alpha);
+}
+.linkkilista li{
+  border-bottom:dotted 1px hotpink;
+}
+.yhteydenotto label{
+  display:block;
+  margin:auto;
+  padding:10px;
+
+}
+.yhteydenotto input[type="text"], input[type="number"], input[type="date"], input[type="email"],  .yhteydenotto textarea{
+  padding:10px;
+  width:70%;
+  
+}
+.nappula{
+background-color: black;
+color:white;
+padding: 10px;
+border: none;
+}
+.nappula:hover{
+background-color:rgb(228, 16, 16);
+border:none;
+}
+.laatikko{
+  float:left;
+  width:33.3%;  
+  border:2px solid black;
+  padding:10px;
+  box-sizing: border-box;
+  margin-top:25px;
+}
+.asemointi{
+  position:fixed;
+  top:100px;
+  left:0px;
+}
+.sidebaar {
+  height: auto;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebaar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebaar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebaar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbbtn:hover {
+  background-color: #444;
+}
+
+#maiin {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+
+@media screen and (max-height: auto) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div id="mySidebbar" class="sidebbar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="fr.html">vaalea</a>
+  <a href="ar.html">tumma</a>
+  <a href="or.html">sateenkaari</a>
+</div>
+
+<div id="main">
+  <button class="openbbtn" onclick="openNav()">☰ muuta teema</button>  
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebbar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebbar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+~
+*{
+  margin:0;
+  padding:0;
+}
+ul{
+  list-style:none;
+}
+ul li {
+  padding:5px;
+  background:hotpink;
+  margin:5px 0;
+}
+header{
+  background:rgb(110, 66, 8);
+  padding:10px;
+  text-align:center;
+}
+#opiskelija-lomake{
+  background:blue;
+  padding:15px;
+}
+#opiskelija-lomake input[type='text']{
+  width:100%;
+  padding:8px;
+  margin-bottom:10px;
+  border-radius:5px;
+  border:1px double yellow;
+}
+.kurssinappi{
+  display: block;
+  width:100%;
+  padding:10px 15px;
+  border:0;
+  background:green;
+  color:white;
+  border-radius:5px;
+  margin:5px 0;
+}
+.kurssinappi:hover{
+  background:red;
+}
+.merkinta{
+  display: block;
+  width:100%;
+  padding:10px 15px;
+  border:0;
+  background:black;
+  color:white;
+  border-radius:5px;
+  margin:5px 0;
+}
+.merkinta:hover{
+  background:rgb(115, 89, 230);
+}
+.lomake-alue{
+  padding:10px 15px;
+  width:70%;
+  margin:auto;
+  background:purple;
+  
+}
+.virhe{
+  background:black;
+  color:yellowgreen;
+  margin:10px;
+  text-align:center;
+  padding:10px;
+}
+
+
+
+
+.form-validation-error {
+
+border: 10px solid red !important;
+
+
+
+}
