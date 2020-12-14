@@ -31,5 +31,20 @@
         </form>
       <script src="scriptemail.js"></script>
 
+<script>
+    var colors = ["black", "white", "green"];
+    var colorIndex = 0;
+    function changeColor() {
+        var col = document.getElementById("body");
+        if( colorIndex >= colors.length ) {
+            colorIndex = 0;
+        }
+        col.style.backgroundColor = colors[colorIndex];
+        colorIndex++;
+    }
+</script>
+    <body id='body'>
+    <button onclick="changeColor();">taustavärin vaihto </button>
+
   </body>
 </html>
