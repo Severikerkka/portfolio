@@ -2,25 +2,21 @@
        <link rel="stylesheet" type="text/css"
         href="css/style.css">
        
-           <div class="alue1">
-         <div class="sisalto1">
-    <form action="ty.html" method="post">
-    <label>nimi</label>
-    <input type="text" nimi="nimi" required>
-    <span class="highlight"></span>
-    <span class="bar"></span>
-    <br><br>
-    <label>email</label>
-    <input type="email" email="sähköposti" required> <br><br>
-    <label>ikä</label>
-    <input type="number"> <br><br>
-     <label>puh</label>
-    <input type="number"> <br><br>
-    <label>syntymäaika</label>
-    <input type="date"> <br><br>
-     <label>Terveiset</label>
-    <textarea></textarea><br><br>
-<input type="submit" id="btnSubmit" name="btnSubmit" value="lähetä"/>
+        <div class="lomake-alue">
+        <form id="opiskelija-lomake" action="ty.html" method="post">
+          <div>
+            <label>nimi:</label>
+            <input type="text" id="nimi" required>
+          </div>
+            <div>
+            <label>email:</label>
+            <input type="email" id="email" required>
+          </div>
+             <div>
+            <label>viesti:</label>
+            <input type="text" id="viesti" required>
+          </div>
+<input type="submit" class="lahetanappi" name="btnSubmit" value="lähetä"/>
 
 }
 </div>
