@@ -7,7 +7,7 @@ emailnappi.addEventListener('click', e =>{
 
 function sendJSON(){
   let xhr = new XMLHttpRequest();
-  let url = "https://salpausemail.azurewebsites.net/api/HttpTriggerCSharp1?code=lWOELqiU07AqsBviOQYzuNIrQP7xoV7NV7C5W2ctgjIRcf7nXE2biw==";
+  let url = "https://salpausemail.azurewebsites.net/api/HttpTriggerCSharp2?code=PnWhScmEcspN8Fy7eYKnIZA37AFgUZ0fMQ1OpXOJ6dtBPBGNXAMIqQ==";
 
 xhr.open("POST", url, true);
 
@@ -18,11 +18,14 @@ xhr.open("POST", url, true);
    console.log('yhteys toimii');
     }
    };
+   const nimi document.querySelector('#nimi'),value;
+   const email document.querySelector('#email'),value;
+  const viesti document.querySelector('#viesti'),value;
+
   var data = JSON.stringify({
-    "EmailMsg" : "Posti", //kirjoittaa sähköpostin sisällön
-    "EmailAddress" : "severi.kerkka@edu.salpaus.fi", //viestin kirjoittajan sähköpostin
-    "EmailTo" : "seve9191@gmail.com", //oma sähköposti
-    "EmailName" : "Teppo Tyyppi" //nimi-kentän sisältö
+    "EmailMsg" : "viesti", //kirjoittaa sähköpostin sisällön
+    "EmailTo" : "severi.kerkka", //oma sähköposti
+    "EmailName" : "nimi+ " "+email //nimi-kentän sisältö
   });
   xhr.send(data);
 }
