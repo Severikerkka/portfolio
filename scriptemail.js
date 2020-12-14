@@ -18,14 +18,14 @@ xhr.open("POST", url, true);
    console.log('yhteys toimii');
     }
    };
-   const nimi document.querySelector('#nimi'),value;
-   const email document.querySelector('#email'),value;
-  const viesti document.querySelector('#viesti'),value;
+   const nimi = document.querySelector('#nimi').value;
+   const email = document.querySelector('#email').value;
+  const viesti = document.querySelector('#viesti').value;
 
   var data = JSON.stringify({
-    "EmailMsg" : "viesti", //kirjoittaa sähköpostin sisällön
+    "EmailMsg" : viesti, //kirjoittaa sähköpostin sisällön
     "EmailTo" : "severi.kerkka", //oma sähköposti
-    "EmailName" : "nimi+ " "+email //nimi-kentän sisältö
+    "EmailName" : nimi
   });
   xhr.send(data);
 }
